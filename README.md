@@ -27,4 +27,4 @@ https://activeexpensetracker.netlify.app/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-luhrhenz/loner.git
+git clone https://github.com/luhrhenz/loner.git
