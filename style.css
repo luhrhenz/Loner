@@ -4,22 +4,29 @@
 }
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 4rem;
     background-color: whitesmoke;
     font-size: 20.15px;
-    
+    background-color: teal;
+}
+body.dark-mode{
+    background-color: whitesmoke;
 }
 .container{
     justify-content: center;
     align-items: center;
-    background-color: lightgrey;
+    background-color: #2c3e50;
     padding: 2rem;
-    box-shadow: 0 2px 4px  black;
+    box-shadow: 0 4px 8px  black;
     border-radius: 30px;
     height: relative;
     cursor: pointer;
+}
+body.dark-mode .container{
+    background-color: lightgrey;
 }
 h1, h2{
     display: flex;
@@ -27,7 +34,16 @@ h1, h2{
     align-content: center;
     padding: 1rem;
     margin: 1rem;
-    color: purple;
+    color: Yellow;
+}
+body.dark-mode h1, h2{
+    color: red;
+}
+h2{
+    color: yellow;
+}
+body.dark-mode h2{
+    color: red;
 }
 .input-section{
     display: flex;
@@ -36,6 +52,10 @@ h1, h2{
 }
 label{
     font-weight: bold;
+    color: white;
+}
+body.dark-mode label{
+    color: black;
 }
 table{
     background-color: whitesmoke;
@@ -43,25 +63,48 @@ table{
     border-collapse: collapse;
 }
 th, td{
-    border: 2px dotted black;
+    border: 2px solid red;
     text-align: center;
     padding: 0.5rem;
 }
+body.dark-mode th, td{
+    border: 2px solid black;
+}
 th{
-    color: blue;
-    background-color: blanchedalmond;
+    color: white;
+    background-color: black;
+}
+body.dark-mode th{
+    color: black;
+    background-color: sandybrown;
 }
 td{
     font-weight: bold;
+    border: 2px solid red;
+}
+body.dark-mode td{
+    border :2px solid black;
+}
+.T{
+    background-color: dimgrey;
+    color: floralwhite;
+}
+body.dark-mode .T{
+    background-color: black;
+    color: white;
 }
 button{
     background-color: skyblue;
-    color: darkred;
+    color: black;
     border-radius: 50px;
     height: 1.5rem;
     width: 3rem;
     font-weight: bold;
     transition: all 0.3s ease;
+}
+body.dark-mode button{
+    background-color: #2c3e50;
+    color: white;
 }
 button:hover{
     transform: scale(1.05);
@@ -71,4 +114,27 @@ button:hover{
     border-radius: 30px;
     background-color: red;
     color: white;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: -20.5px;
+    margin-left: 155px;
+    font-size: 15pt;
+    font-weight: bold;
+    color: white;
+}
+body.dark-mode footer{
+    color: #000;
+}
+@media (max-width: 600px) {
+  .container {
+    margin: 10px;
+    border-radius: 15px;
+  }}
+.theme-toggle{
+    display: inline;
+    margin-top: 1rem;
 }

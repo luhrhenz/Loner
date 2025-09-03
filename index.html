@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <h1>EXPENSE TRACKER APP</h1>
-    
     <div class="input-section">
       <div>
         <label for="myOptions">Daily Expenses</label>
@@ -48,14 +48,20 @@
         </tbody>
         <tfoot>
           <tr>
-            <td><strong>TOTAL:</strong></td>
+            <td class="T"><strong>TOTAL:</strong></td>
             <td id="total-amount">0</td>
             <td></td>
             <td></td>
           </tr>
         </tfoot>
       </table>
+      <button class="theme-toggle" id="themeToggle">
+        <i class="fas fa-sun"></i>
+      </button>
     </div>
+      <footer>
+        Built by Lawrence Ahaneku
+      </footer>
   </div>
   <script src="main.js"></script>
 </body>

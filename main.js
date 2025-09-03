@@ -58,3 +58,31 @@ let totalAmountValue = 0;
       dateInput.value = '';
       categorySelect.value = '';
   });
+const themeToggle = document.getElementById("themeToggle");
+
+    // Load saved theme on page load
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark-mode");
+      let icon = themeToggle.querySelector("i");
+      icon.classList.remove("fa-moon");
+      icon.classList.add("fa-sun");
+    }
+
+    themeToggle.onclick = function() {
+      let body = document.body;
+      let icon = themeToggle.querySelector("i");
+
+      if (body.classList.contains("dark-mode")) {
+        body.classList.remove("dark-mode");
+        localStorage.setItem("theme", "light");
+
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+      } else {
+        body.classList.add("dark-mode");
+        localStorage.setItem("theme", "dark");
+
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+      }
+    };
