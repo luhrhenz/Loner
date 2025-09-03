@@ -3,7 +3,23 @@
     padding: 0;
 }
 body{
-    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+    background-color: whitesmoke;
+    font-size: 20.15px;
+    
+}
+.container{
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    padding: 2rem;
+    box-shadow: 0 2px 4px  black;
+    border-radius: 30px;
+    height: relative;
+    cursor: pointer;
 }
 h1, h2{
     display: flex;
@@ -11,4 +27,48 @@ h1, h2{
     align-content: center;
     padding: 1rem;
     margin: 1rem;
+    color: purple;
+}
+.input-section{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+label{
+    font-weight: bold;
+}
+table{
+    background-color: whitesmoke;
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    border: 2px dotted black;
+    text-align: center;
+    padding: 0.5rem;
+}
+th{
+    color: blue;
+    background-color: blanchedalmond;
+}
+td{
+    font-weight: bold;
+}
+button{
+    background-color: skyblue;
+    color: darkred;
+    border-radius: 50px;
+    height: 1.5rem;
+    width: 3rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+button:hover{
+    transform: scale(1.05);
+}
+.delete-btn{
+    padding: 6px 8px;
+    border-radius: 30px;
+    background-color: red;
+    color: white;
 }
